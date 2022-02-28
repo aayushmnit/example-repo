@@ -40,7 +40,7 @@ nb_path: "00_explore.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Explore" class="doc_header"><code>class</code> <code>Explore</code><a href="https://github.com/Aayush Agrawal/mlcookbooks/tree/{branch}/mlcookbooks/explore.py#L9" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Explore</code>(<strong><code>df</code></strong>)</p>
+<h2 id="Explore" class="doc_header"><code>class</code> <code>Explore</code><a href="https://github.com/aayushmnit/mlcookbooks/tree/{branch}/mlcookbooks/explore.py#L9" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Explore</code>(<strong><code>df</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -67,6 +67,38 @@ nb_path: "00_explore.ipynb"
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="Explore.get_dim" class="doc_header"><code>Explore.get_dim</code><a href="__main__.py#L9" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Explore.get_dim</code>()</p>
+</blockquote>
+<p>Function to print the dimensions of a given python dataframe
+Required Input -</p>
+
+<pre><code>- df = Pandas DataFrame
+</code></pre>
+<p>Expected Output -</p>
+
+<pre><code>- Data size</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -101,6 +133,116 @@ nb_path: "00_explore.ipynb"
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="Explore.print_dataunique" class="doc_header"><code>Explore.print_dataunique</code><a href="__main__.py#L19" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Explore.print_dataunique</code>()</p>
+</blockquote>
+<p>Function to print unique information for each column in a python dataframe
+Required Input -</p>
+
+<pre><code>- df = Pandas DataFrame
+</code></pre>
+<p>Expected Output -</p>
+
+<pre><code>- Column name
+- Data type of that column
+- Number of unique values in that column
+- 10 unique values from that column</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">Explore</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">print_dataunique</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0 0 &lt;class &#39;numpy.int64&#39;&gt; 10 [ 6 21 36 16 93 90 45 49 87  1]
+1 1 &lt;class &#39;numpy.int64&#39;&gt; 9 [16 17 23 46 59 22 36 31 96]
+2 2 &lt;class &#39;numpy.int64&#39;&gt; 10 [32  4 34 91 51 79 57 25 54  9]
+3 3 &lt;class &#39;numpy.int64&#39;&gt; 10 [69 96 12 99  6 55 97 17 70 87]
+4 4 &lt;class &#39;numpy.int64&#39;&gt; 8 [68 28 11 60 91  4  7 66]
+5 5 &lt;class &#39;numpy.int64&#39;&gt; 10 [22 93 45 41 26 70 50 43 49 69]
+6 6 &lt;class &#39;numpy.int64&#39;&gt; 10 [ 6 90  4 92 13 41 52 60 88 72]
+7 7 &lt;class &#39;numpy.int64&#39;&gt; 9 [20 37 12 61 88 46 16 31 18]
+8 8 &lt;class &#39;numpy.int64&#39;&gt; 8 [71 36 99 43 84 19 53 48]
+9 9 &lt;class &#39;numpy.int64&#39;&gt; 10 [76 63 17  0 79 87 14 19 53 30]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">notebook2script</span><span class="p">;</span> <span class="n">notebook2script</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Converted 00_explore.ipynb.
+Converted index.ipynb.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

@@ -19,3 +19,20 @@ class Explore:
             - Data size
         '''
         return "Data size: Rows-{0} Columns-{1}".format(self.df.shape[0], self.df.shape[1])
+
+    def print_dataunique(self):
+        '''
+        Function to print unique information for each column in a python dataframe
+        Required Input -
+            - df = Pandas DataFrame
+        Expected Output -
+            - Column name
+            - Data type of that column
+            - Number of unique values in that column
+            - 10 unique values from that column
+        '''
+        counter = 0
+        for i in self.df.columns:
+            x = self.df.loc[:,i].unique()
+            print(counter,i,type(self.df.loc[0,i]), len(x), x[0:10])
+            counter +=1
