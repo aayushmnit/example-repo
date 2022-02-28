@@ -8,6 +8,6 @@ modules = ["explore.py"]
 
 doc_url = "https://aayushmnit.github.io/mlcookbooks/"
 
-git_url = "https://github.com/aayushmnit/mlcookbooks/tree/{branch}/"
+git_url = "https://github.com/aayushmnit/mlcookbooks/tree/master/"
 
 def custom_doc_links(name): return None
