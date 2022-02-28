@@ -6,8 +6,8 @@ index = {"Explore": "00_explore.ipynb"}
 
 modules = ["explore.py"]
 
-doc_url = "https://Aayush Agrawal.github.io/mlcookbooks/"
+doc_url = "https://aayushmnit.github.io/mlcookbooks/"
 
-git_url = "https://github.com/Aayush Agrawal/mlcookbooks/tree/{branch}/"
+git_url = "https://github.com/aayushmnit/mlcookbooks/tree/{branch}/"
 
 def custom_doc_links(name): return None
